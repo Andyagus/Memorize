@@ -12,7 +12,7 @@ struct ContentView: View {
     var body: some View {
         return HStack() {
              return ForEach(0..<4){ index in
-                CardView(isFaceUp:false)
+                CardView(isFaceUp: true)
              }
         }
         .foregroundColor(Color.orange)
