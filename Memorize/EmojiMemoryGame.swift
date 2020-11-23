@@ -11,7 +11,6 @@ import SwiftUI
 class EmojiMemoryGame {
     private var model: MemoryGame<String> = MemoryGame<String>(cards: <#T##Array<MemoryGame<String>.Card>#>
     
-    // MARK: -Access to the Model
     
     var cards: Array<MemoryGame<String>.Card>{
         return model.cards
