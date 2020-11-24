@@ -14,6 +14,7 @@
 		4B063919256469440007CFA4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B063918256469440007CFA4 /* Preview Assets.xcassets */; };
 		4B06391C256469440007CFA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B06391A256469440007CFA4 /* LaunchScreen.storyboard */; };
 		4BC83D01256DADAA00FC6B7B /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC83D00256DADAA00FC6B7B /* MemoryGame.swift */; };
+		4BC83D04256DAFD200FC6B7B /* EmojiMemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC83D03256DAFD200FC6B7B /* EmojiMemoryGame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		4B06391B256469440007CFA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B06391D256469440007CFA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BC83D00256DADAA00FC6B7B /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
+		4BC83D03256DAFD200FC6B7B /* EmojiMemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				4B06391A256469440007CFA4 /* LaunchScreen.storyboard */,
 				4B06391D256469440007CFA4 /* Info.plist */,
 				4B063917256469440007CFA4 /* Preview Content */,
+				4BC83D03256DAFD200FC6B7B /* EmojiMemoryGame.swift */,
 			);
 			path = Memorize;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 				4B063912256469400007CFA4 /* SceneDelegate.swift in Sources */,
 				4BC83D01256DADAA00FC6B7B /* MemoryGame.swift in Sources */,
 				4B063914256469400007CFA4 /* ContentView.swift in Sources */,
+				4BC83D04256DAFD200FC6B7B /* EmojiMemoryGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
