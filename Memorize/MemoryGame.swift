@@ -17,19 +17,20 @@ struct MemoryGame<CardContent>{
     }
     
     init(numberOfPairsOfCards: Int, cardContentFactory: (Int) -> CardContent){
-        
+        //why do you have to initialize the array if its already been established on top and if I take it away nothing happends…
         cards = Array<Card>()
         for pairIndex in 0..<numberOfPairsOfCards {
-            var content = cardContentFactory(pairIndex)
-            cards.append(Card(isFaceUp: false, isMatched: false, content: content))
-            cards.append(Card(isFaceUp: false, isMatched: false, content: content))
+            let content = cardContentFactory(pairIndex)
+            cards.append(Card(content: content, id: pairIndex*2))
+            cards.append(Card(content: content, id: pairIndex*2+1))
         }
     }
     
-    struct Card{
-        var isFaceUp:Bool
-        var isMatched:Bool
+    struct Card: Identifiable{
+        var isFaceUp:Bool = true
+        var isMatched:Bool = false
         var content: CardContent
+        var id: Int
     }
     
 }
