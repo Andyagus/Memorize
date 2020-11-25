@@ -12,8 +12,10 @@ import SwiftUI
 
 struct ContentView: View {
     var viewModel: EmojiMemoryGame
-    
+
     var body: some View {
+        let fontSize = viewModel.cards.count < 10 ? Font.largeTitle : Font.caption
+        print(viewModel.cards.count)
         return HStack() {
             return ForEach(viewModel.cards){ card in
                 CardView(card: card).onTapGesture {
@@ -23,8 +25,11 @@ struct ContentView: View {
         }
         .foregroundColor(Color.orange)
         .padding()
-        .font(Font.largeTitle)
+        .font(fontSize)
+//        let chosenFont =
+        
     }
+    
 }
 
 struct CardView: View{
@@ -32,12 +37,8 @@ struct CardView: View{
     var body: some View{
         return ZStack() {
             if card.isFaceUp{
-                RoundedRectangle(cornerRadius: 10.0).fill(Color.white)
-//                RoundedRectangle(cornerRadius: 25, style: .continuous)
-                //                    .fill(Color.red)
-                //                    .frame(width: 200, height: 200)
-
-                RoundedRectangle(cornerRadius: 10.0).stroke(lineWidth: 3)
+                RoundedRectangle(cornerRadius: 10.0).fill(Color.white).frame(width:40, height: 60)
+                RoundedRectangle(cornerRadius: 10.0).stroke(lineWidth: 3).frame(width:40, height: 60)
                 Text(card.content)
             }else{
                 RoundedRectangle(cornerRadius: 10.0).fill()

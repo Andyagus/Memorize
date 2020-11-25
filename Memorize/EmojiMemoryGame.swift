@@ -16,9 +16,10 @@ class EmojiMemoryGame{
     //Creating the card content in emoji memory game and initializing it in memory game model
     private(set) var model: MemoryGame<String> = EmojiMemoryGame.createMemoryGame()
     //utility function to create our memory game
+
     static func createMemoryGame() -> MemoryGame<String> {
-        let emojis = ["👻","🎃", "🕷", "🧪"]
-        return MemoryGame<String>(numberOfPairsOfCards: emojis.count, cardContentFactory: { pairIndex in
+        let emojis = ["👻","🎃", "🕷", "🧪", "🕸"]
+        return MemoryGame<String>(numberOfPairsOfCards: Int.random(in: 1...5), cardContentFactory: { pairIndex in
             return emojis[pairIndex]
         })
     }
