@@ -18,7 +18,9 @@ class EmojiMemoryGame{
     //utility function to create our memory game
 
     static func createMemoryGame() -> MemoryGame<String> {
-        let emojis = ["👻","🎃", "🕷", "🧪", "🕸"]
+        var emojis = ["👻","🎃", "🕷", "🧪", "🕸", "👠", "🎭", "👾", "🍺", "🧞‍♂️", "🐲", "📸", "🛀🏽"]
+        //shuffle emoji array so they are randomly chosen
+        emojis.shuffle()
         return MemoryGame<String>(numberOfPairsOfCards: Int.random(in: 1...5), cardContentFactory: { pairIndex in
             return emojis[pairIndex]
         })

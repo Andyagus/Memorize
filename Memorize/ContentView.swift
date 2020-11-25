@@ -15,7 +15,7 @@ struct ContentView: View {
 
     var body: some View {
         //since the array shows each card individually I set up the terinary statement to show the large title under the condition that the amount of cards is less then 5 pairs or (5x2) otherwise, show the large title.  I set it to the font size variable.
-        let fontSize = viewModel.cards.count < 5*2 ? Font.largeTitle : Font.caption
+        let fontSize = viewModel.cards.count < 5*2 ? Font.largeTitle : Font.title
         print(viewModel.cards)
         return HStack() {
             return ForEach(viewModel.cards){ card in
