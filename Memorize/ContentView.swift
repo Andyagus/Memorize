@@ -14,8 +14,9 @@ struct ContentView: View {
     var viewModel: EmojiMemoryGame
 
     var body: some View {
-        let fontSize = viewModel.cards.count < 10 ? Font.largeTitle : Font.caption
-        print(viewModel.cards.count)
+        //since the array shows each card individually I set up the terinary statement to show the large title under the condition that the amount of cards is less then 5 pairs or (5x2) otherwise, show the large title.  I set it to the font size variable.
+        let fontSize = viewModel.cards.count < 5*2 ? Font.largeTitle : Font.caption
+        print(viewModel.cards)
         return HStack() {
             return ForEach(viewModel.cards){ card in
                 CardView(card: card).onTapGesture {
@@ -25,8 +26,8 @@ struct ContentView: View {
         }
         .foregroundColor(Color.orange)
         .padding()
+        //font is equal to the fontSize variable specified above
         .font(fontSize)
-//        let chosenFont =
         
     }
     
