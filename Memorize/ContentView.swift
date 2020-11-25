@@ -38,8 +38,9 @@ struct CardView: View{
     var body: some View{
         return ZStack() {
             if card.isFaceUp{
-                RoundedRectangle(cornerRadius: 10.0).fill(Color.white).frame(width:40, height: 60)
-                RoundedRectangle(cornerRadius: 10.0).stroke(lineWidth: 3).frame(width:40, height: 60)
+            
+                RoundedRectangle(cornerRadius: 10.0).fill(Color.white).frame(height: 60)
+                RoundedRectangle(cornerRadius: 10.0).stroke(lineWidth: 3).frame(height: 60)
                 Text(card.content)
             }else{
                 RoundedRectangle(cornerRadius: 10.0).fill()
