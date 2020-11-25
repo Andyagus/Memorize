@@ -6,6 +6,8 @@
 //  Copyright © 2020 andyagus. All rights reserved.
 //
 
+//homework,   make them stop being tall and skinny, random number
+
 import SwiftUI
 
 struct ContentView: View {
@@ -31,12 +33,15 @@ struct CardView: View{
         return ZStack() {
             if card.isFaceUp{
                 RoundedRectangle(cornerRadius: 10.0).fill(Color.white)
+//                RoundedRectangle(cornerRadius: 25, style: .continuous)
+                //                    .fill(Color.red)
+                //                    .frame(width: 200, height: 200)
+
                 RoundedRectangle(cornerRadius: 10.0).stroke(lineWidth: 3)
                 Text(card.content)
             }else{
                 RoundedRectangle(cornerRadius: 10.0).fill()
             }
- 
         }
     }
 }

@@ -28,6 +28,7 @@ class EmojiMemoryGame{
     //The array needs you to put the struct inside of <> and we need to define the struct with a specific value, so we are adding string within it thats why we see <<>>
     // MARK: -Access to the model
     var cards: Array<MemoryGame<String>.Card>{
+        
         //cards is an array in the memory game model
         return model.cards
     }
