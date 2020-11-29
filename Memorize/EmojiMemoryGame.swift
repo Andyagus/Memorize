@@ -21,7 +21,6 @@ class EmojiMemoryGame{
     }
         
     
-    //video doorbells video - the view sees the model through a video feed.  The model is at the doorbell ringing and the view can see who it is…the vars and funcs get let the views see the model in constricted ways…we need the View to see the cards so we'll create an array of emoji memory game cards
     //The array needs you to put the struct inside of <> and we need to define the struct with a specific value, so we are adding string within it thats why we see <<>>
     // MARK: -Access to the model
     var cards: Array<MemoryGame<String>.Card>{
