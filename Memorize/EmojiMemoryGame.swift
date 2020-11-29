@@ -9,13 +9,7 @@
 import SwiftUI
 
 class EmojiMemoryGame{
-    //variable to access the model
-    //The type of a var is a struct,a string and a bool are structs
-    //Doorway is now wideopen - private makes it only accessible by the emoji memorygame class, but now the views can't see the model through it only the emoji memory game can see the model, but the views cannot.  Adding the word 'set' allows the views to see the model, but only the EmojiMemoryGame can alter the model
-    //Iniaitlizing the model through the ViewModel,like the number of pairs and which emojis - requires an init in the model
-    //Creating the card content in emoji memory game and initializing it in memory game model
     private(set) var model: MemoryGame<String> = EmojiMemoryGame.createMemoryGame()
-    //utility function to create our memory game
 
     static func createMemoryGame() -> MemoryGame<String> {
         var emojis = ["👻","🎃", "🕷", "🧪", "🕸", "👠", "🎭", "👾", "🍺", "🧞‍♂️", "🐲", "📸", "🛀🏽"]
