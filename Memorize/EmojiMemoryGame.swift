@@ -19,22 +19,15 @@ class EmojiMemoryGame{
             return emojis[pairIndex]
         })
     }
-        
-    
-    //The array needs you to put the struct inside of <> and we need to define the struct with a specific value, so we are adding string within it thats why we see <<>>
     // MARK: -Access to the model
     var cards: Array<MemoryGame<String>.Card>{
-        
-        //cards is an array in the memory game model
         return model.cards
     }
     
     
     
     //MARK: - Intent(s)
-    //the intents allow to tell emoji memory game what it should do to the model
-    //Hi Views, here's what you can do to change the model
-    //Choose a card that I intended
+   
     
     func choose(card: MemoryGame<String>.Card){
         //the choose function is coming from the model var/struct
